@@ -1,0 +1,129 @@
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+.header {
+    width: 90%;
+    margin: 0 auto;
+}
+.input-items-1:hover ~ .img_2  {
+    visibility: visible;
+    opacity: 1;
+    transition: 2.5s;
+    height: 100%;
+    user-select: all;
+}
+
+.img_2 {
+    width: 70%;
+    margin: 3% auto;
+    visibility: hidden;
+    opacity: 0;
+    padding-left: 10%;
+    max-height: 0;
+    cursor: pointer;
+    user-select: all;
+}
+
+.label_item_1 {
+    display: block;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/7420/7420933.png) ;
+    background-repeat: no-repeat;
+    font-size: 1.5em;
+    background-size: 3% auto;
+    background-position: 100% 30%;
+    cursor: pointer;
+    padding-bottom: 2%;
+    user-select: all;
+}
+
+.input-items-1 {
+    width: 0;
+    height: 0;
+}
+img {
+    width: 100%;
+}
+.label_item_1:hover {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/37/37413.png) ;
+    background-repeat: no-repeat;
+    color: blueviolet;
+    font-weight: bold;
+    transition: 1.5s;
+    height: 12rem;
+    background-size: 3% auto;
+    background-position: 100% 10%;
+    user-select: all;
+}
+.label_item_1:hover .img_2{
+    opacity: 1;
+    visibility: visible;
+    transition: 1.5s;
+    max-height: 8rem;   
+}
+.input-items-1:checked + .label_item_1 > .img_2 {
+    opacity: 1;
+    visibility: visible;
+    max-height: 8rem;   
+}
+.input-items-1:checked + .label_item_1  {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/37/37413.png);
+    background-repeat: no-repeat;
+    color: blueviolet;
+    font-weight: bold;
+    transition: 1.5s;
+    height: 12rem;
+    background-size: 3% auto;
+    background-position: 100% 10%;
+    
+}
+@media (min-width: 820px) {
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .header {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .label_item_1 {
+        font-size: 3rem;
+    }
+    .input-items-1:checked + .label_item_1  {
+        height: 18rem;
+    }
+    img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .label_item_1 {
+        font-size: 2rem;
+    }
+    .label_item_1:hover {
+        height: 18rem;
+    }
+}
+@media (min-width: 1920px) {
+    .wrapper {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .header {
+        width: 0%;
+        margin: 0 auto;
+    }
+    .input-items-1:checked + .label_item_1  {
+        height: 30rem;
+    }
+    
+    img {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .label_item_1 {
+        font-size: 4rem;
+    }
+    .label_item_1:hover {
+        height: 25rem;
+    }
+}
