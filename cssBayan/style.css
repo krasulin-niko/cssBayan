@@ -99,6 +99,9 @@ img {
     .label_item_1 {
         font-size: 2rem;
     }
+    .label_item_1:hover {
+        height: 18rem;
+    }
 }
 @media (min-width: 1920px) {
     .wrapper {
@@ -110,13 +113,17 @@ img {
         margin: 0 auto;
     }
     .input-items-1:checked + .label_item_1  {
-        height: 27rem;
+        height: 30rem;
     }
+    
     img {
         width: 80%;
         margin: 0 auto;
     }
     .label_item_1 {
         font-size: 4rem;
+    }
+    .label_item_1:hover {
+        height: 25rem;
     }
 }
